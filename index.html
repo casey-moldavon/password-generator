@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Passwird Generator</title>
+    <title>Password Generator</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <!-- create dynamically updated password Generator
-    
+
     password criteria:
         Length (must be between 8 and 128 characters)
         Character type:
@@ -30,6 +31,37 @@
 
 
 <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+
+                <div class="content">
+                    <hi>Password Generator</hi>
+                    <br>
+                    <input type="text" id="password-display">
+                    <br>
+                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <br>
+                    <button onclick="">Generate Password</button>
+                    <button onclick="">Copy to Clipboard</button>
+
+                    <div id="length"></div>
+                </div>
+
+                <div class="previous_passwords">
+                    <b>Previously Generayed Passwords</b>
+                    <br>
+                    <div class="previousPasswords"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
 
     <script type="text/javascript">
         
