@@ -1,0 +1,17 @@
+
+
+.content {
+    padding: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: 10px;
+    width: 100%;
+    background-color: #7c7c7c;
+    text-align: center;
+}
+
+#password-display {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
