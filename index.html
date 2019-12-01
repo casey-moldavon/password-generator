@@ -38,9 +38,9 @@
 
                 <div class="content">
                     <h1>Password Generator</h1>
-                    <br />
+                    <br>
                     <input type="text" id="password-display">
-                    <br />
+                    <br>
                     <button onclick="">Generate Password</button>
                     <button onclick="">Copy to Clipboard</button>
 
@@ -62,7 +62,29 @@
 
 
     <script type="text/javascript">
-        
+        //generate random password
+
+        function generate(){
+
+            //random char length generator
+            let charLength = Math.floor((Math.random() * 128) + 8);
+
+            //all possible/available password values
+            let characters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890`~!@#$%^&*()-_=+";
+            let currentPassword = "";
+            let previousPasswords = [];
+
+            //create for loop to generate random password based on char from characters variable
+            //randomize character length between 8 and 128
+            //(possibly give option to choose strength of password from list: "short" "medium" "long") *************work on later**************
+            for(var i = 0; - <=){
+
+
+
+            previousPasswords.push(currentPassword)
+            }
+
+        }
         
         
         
