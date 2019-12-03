@@ -8,12 +8,12 @@ I began this project like any other, initially creating the necessary files to p
 
 I then created a container which would, for lack of a better word, contain the elements of the password generator including the header, buttons and, of course, the generated password. I also thought to add placeholders in the event that i wished to be more creative and add additonal elements such as an option to influence the length of the password generated or the option to automatically copy it to the user's clipboard.
 
-* ![image 1](images/step-1-html.jpg)
+![image 1](images/step-1-html.jpg)
 
 
 Avoiding the Javascript aspect of the project as much as possible, i then dove into some styling once i had the basic framework established within the container. The styling was actually quite minimum at first as bootstrap had provided a majority of the customization options i would need leaving only some small alterations to be made in the measurments of the container and spacing within it. I didn't spend too long on styling though as i wanted to take a decent amount of time to consider what i wanted the design to look like. It was then that i started working on the actual coding (in Javascript).
 
-* ![image 2](images/step-2-css.jpg)
+![image 2](images/step-2-css.jpg)
 
 
 This was very intimidating at first as i couldn't quite see how the password generating would even work so i took things one step at a time starting with creating my variables.
@@ -33,12 +33,12 @@ Picking up after completing the random password generator, i quickly found that 
 * Design Change:
 rather than generating a random character length (charLength), i've created a prompt asking the user for the desired character length of their generated password along with alerts (conditionals based on what is input by the user) should they input a number less than 8 or write a letter/word rather than a number.
 
-* ![image 3](images/step-3-javascript.jpg)
+![image 3](images/step-3-javascript.jpg)
 
 
 After changing to the prompt option i then decided to add some more creative changes to the style and background, selecting and then customizing an image to fit followed by matching the container background-color. I also changed the prompt and alert text to theme it with the background image which was now a cute figure (named Safety Cat) sipping coffee. Added a little blue speech bubble too for extra kicks and to also match the buttons i previously changed with bootstrap to highlight a particular blue when hovered on. Due to Bootstrap's limited color choices, i figured adding elements to the background image would be easier than rewriting the button code so i used google chrom's browser Eye Dropper to determine the color and style the image accordingly.
 
-* ![image 4](images/step-4-css.jpg)
+![image 4](images/step-4-css.jpg)
 
 ​
 ### Prerequisites

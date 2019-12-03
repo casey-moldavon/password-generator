@@ -1,4 +1,4 @@
-
+/* class */
 .content {
     padding: 20px;
     padding-left: 55px;
@@ -10,7 +10,7 @@
     text-align: center;
     border-radius: 10px;
 }
-
+/* id */
 #password {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -23,11 +23,11 @@
     color: #007bff;
     border-radius: 10px;
 }
-
+/* class */
 .row {
     text-align: center;
 }
-
+/* class */
 .content {
     font-weight: bold;
     color: white;
