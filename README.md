@@ -29,6 +29,8 @@ I was sure to write down hundreds of comments and notes within the page psudo co
 
 Picking up after completing the random password generator, i quickly found that there were some display issues with the text box as passwords with a higher length were cutting out of the box's set width which required some more googling to better frame the text itself.
 
+* ![image 3](images/step-3-javascript.jpg)
+
 ​
 ### Prerequisites
 ​
