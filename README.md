@@ -29,6 +29,10 @@ I was sure to write down hundreds of comments and notes within the page psudo co
 
 Picking up after completing the random password generator, i quickly found that there were some display issues with the text box as passwords with a higher length were cutting out of the box's set width which required some more googling to better frame the text itself. I also wanted to work on the copt to clipboard feature (which would become significantly more important if i couldn't fix the text issue).
 
+
+* Design Change:
+rather than generating a random character length (charLength), i've created a prompt asking the user for the desired character length of their generated password along with alerts (conditionals based on what is input by the user) should they input a number less than 8 or write a letter/word rather than a number.
+
 * ![image 3](images/step-3-javascript.jpg)
 
 ​

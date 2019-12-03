@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        body {
+            background-image: url(images/cat-background-2.jpg);
+            background-color: #7c7c7c;}
+    </style>
+
 </head>
 
 <!-- create dynamically updated password Generator
@@ -35,55 +41,92 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-
                 <div class="content">
-                    <h1>Password Generator</h1>
-                    <br>
-                    
+                    <h1><strong>Password Generator</strong></h1>
+                    <br>                    
                     <input type="text" id="password">
                     <br>
-
-                    <button onclick="myFunction()">Generate Password</button>
-                    <button type="button">Copy to Clipboard</button>
-
-                    <!-- <div id="length"></div> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="mx-auto">
+                                <button onclick="question()" class="mr-5 btn-light btn-outline-primary btn-lg"><strong>Generate Password</strong></button>
+                                <button onclick="" class="ml-5 btn-light btn-outline-primary btn-lg"><strong>Copy to Clipboard</strong></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="previous_passwords">
                     <b>Previously Generated Passwords</b>
                     <br>
                     <div id="last_passwords"></div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 
 
 
     <script>
-        //generate random password
 
-        function myFunction(){
+        //first setup a question function to determine password character length
 
-            //random char length generator
-            let charLength = Math.floor((Math.random() * 128) + 8);
+        function question(){
 
             //all possible/available password values
             let chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*()_+";
             let currentPW = ""; //current password that will display what is currently generated
             let previousPW = []; //previous passwords generated in the past (stored here)
 
-            //create for loop to generate random password based on char from characters variable
-            //randomize character length between 8 and 128
-            //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
-            for(var i = 0; i <= charLength; i++) {
-                currentPW = currentPW + chars[Math.floor((Math.random() * Math.floor(chars.length -1)))];
+            var answer = prompt('Safety Cat says: "How many characters do you wish your password to contain?"');
+            console.log(answer);
+            
+            for(var i = 0; i < answer.length; i++){
+                
+                if (answer >= 8) {
+                    //create for loop to generate random password based on char from characters variable
+                    //randomize character length between 8 and 128
+                    //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
+                    for(var i = 0; i <= answer; i++) {
+                        currentPW = currentPW + chars[Math.floor((Math.random() * Math.floor(chars.length -1)))];
+                    }
+                    document.getElementById("password").value = currentPW; //adds currentPW to password (display)
+                }
+                else if (answer < 8) {
+                    alert('Safety Cat yells: "THAT`S NOT SAFE ENOUGH!"');
+                    alert('Safety Cat says: "ahem! *Slirps Coffee*... 8 or more characters long please."');
+                }
+                else {
+                    alert('Safety Cat says: "Numbers only would be puuurrrfect"');
+                    i = answer.length - 1;
+                }
             }
-            document.getElementById("password").value = currentPW; //adds currentPW to password (display)
         }
+
+
+
+//old code below...
+
+        // //generate random password
+
+        // function myFunction(){
+
+
+        //     //random char length generator
+        //     let charLength = Math.floor((Math.random() * 128) + 8);
+
+        //     //all possible/available password values
+        //     let chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*()_+";
+        //     let currentPW = ""; //current password that will display what is currently generated
+        //     let previousPW = []; //previous passwords generated in the past (stored here)
+
+        //     //create for loop to generate random password based on char from characters variable
+        //     //randomize character length between 8 and 128
+        //     //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
+        //     for(var i = 0; i <= charLength; i++) {
+        //         currentPW = currentPW + chars[Math.floor((Math.random() * Math.floor(chars.length -1)))];
+        //     }
+        //     document.getElementById("password").value = currentPW; //adds currentPW to password (display)
+        // }
         
         
         
