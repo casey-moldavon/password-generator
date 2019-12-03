@@ -8,10 +8,16 @@
     width: 100%;
     background-color: #7c7c7c;
     text-align: center;
+    border-radius: 10px;
 }
 
 #password {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: 10px;
+    margin-bottom: 32px;
     width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
 }
