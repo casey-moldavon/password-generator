@@ -82,7 +82,7 @@
             
             for(var i = 0; i < answer.length; i++){
                 
-                if (answer >= 8) {
+                if (answer >= 8 && answer <= 128) {
                     //create for loop to generate random password based on char from characters variable
                     //randomize character length between 8 and 128
                     //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
@@ -91,9 +91,17 @@
                     }
                     document.getElementById("password").value = currentPW; //adds currentPW to password (display)
                 }
+
+                else if (answer > 128) {
+                    alert('Safety Cat yells: "AHHH TOO MANY!"');
+                    alert('Safety Cat says: "ahem! *Slirps Coffee*...i can`t count that high. try 128 or less."');
+                    i = answer.length - 1;
+                }
+
                 else if (answer < 8) {
                     alert('Safety Cat yells: "THAT`S NOT SAFE ENOUGH!"');
                     alert('Safety Cat says: "ahem! *Slirps Coffee*... 8 or more characters long please."');
+                    i = answer.length - 1;
                 }
                 else {
                     alert('Safety Cat says: "Numbers only would be puuurrrfect"');

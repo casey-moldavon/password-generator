@@ -35,6 +35,11 @@ rather than generating a random character length (charLength), i've created a pr
 
 * ![image 3](images/step-3-javascript.jpg)
 
+
+After changing to the prompt option i then decided to add some more creative changes to the style and background, selecting and then customizing an image to fit followed by matching the container background-color. I also changed the prompt and alert text to theme it with the background image which was now a cute figure (named Safety Cat) sipping coffee. Added a little blue speech bubble too for extra kicks and to also match the buttons i previously changed with bootstrap to highlight a particular blue when hovered on. Due to Bootstrap's limited color choices, i figured adding elements to the background image would be easier than rewriting the button code so i used google chrom's browser Eye Dropper to determine the color and style the image accordingly.
+
+* ![image 4](images/step-4-css.jpg)
+
 ​
 ### Prerequisites
 ​
