@@ -39,18 +39,18 @@
                 <div class="content">
                     <h1>Password Generator</h1>
                     <br>
-                    <input type="text" id="password-display">
+                    <input type="text" id="password">
                     <br>
-                    <button onclick="">Generate Password</button>
-                    <button onclick="">Copy to Clipboard</button>
+                    <button onclick="myFunction()">Generate Password</button>
+                    <button type="button">Copy to Clipboard</button>
 
-                    <div id="length"></div>
+                    <!-- <div id="length"></div> -->
                 </div>
 
                 <div class="previous_passwords">
-                    <b>Previously Generayed Passwords</b>
+                    <b>Previously Generated Passwords</b>
                     <br>
-                    <div class="previousPasswords"></div>
+                    <div id="last_passwords"></div>
                 </div>
 
             </div>
@@ -61,29 +61,26 @@
 
 
 
-    <script type="text/javascript">
+    <script>
         //generate random password
 
-        function generate(){
+        function myFunction(){
 
             //random char length generator
             let charLength = Math.floor((Math.random() * 128) + 8);
 
             //all possible/available password values
-            let characters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890`~!@#$%^&*()-_=+";
-            let currentPassword = "";
-            let previousPasswords = [];
+            let chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*()_+";
+            let currentPW = ""; //current password that will display what is currently generated
+            let previousPW = []; //previous passwords generated in the past (stored here)
 
             //create for loop to generate random password based on char from characters variable
             //randomize character length between 8 and 128
-            //(possibly give option to choose strength of password from list: "short" "medium" "long") *************work on later**************
-            for(var i = 0; - <=){
-
-
-
-            previousPasswords.push(currentPassword)
+            //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
+            for(var i = 0; i <= charLength; i++) {
+                currentPW = currentPW + chars[Math.floor((Math.random() * Math.floor(chars.length -1)))];
             }
-
+            document.getElementById("password").value = currentPW; //adds currentPW to password (display)
         }
         
         
