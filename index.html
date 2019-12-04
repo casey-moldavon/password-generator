@@ -74,9 +74,16 @@
         function question(){
 
             //all possible/available password values
-            let chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*()_+";
-            let currentPW = ""; //current password that will display what is currently generated
-            let previousPW = []; //previous passwords generated in the past (stored here)
+            var chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*()_+";
+            var currentPW = ""; //current password that will display what is currently generated
+            var previousPW = []; //previous passwords generated in the past (stored here)
+
+
+            //these variables will be applied to the current password after its been generated but before it is displayed, ensuring that each prerequisite is met.
+            var nums = "0123456789";
+            var caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var lows = "abcdefghijklmnopqrstuvwxyz";
+            var syms = "!@#$%^&*()_+";
 
             var answer = prompt('Safety Cat says: "How many characters do you wish your password to contain?"');
             console.log(answer);
@@ -84,12 +91,26 @@
             for(var i = 0; i < answer.length; i++){
                 
                 if (answer >= 8 && answer <= 128) {
+
                     //create for loop to generate random password based on char from characters variable
                     //randomize character length between 8 and 128
                     //(possibly give option to choose strength of password from list: "short" "medium" "long") **********work on later***********
-                    for(var i = 0; i <= answer; i++) {
+                    for(var i = 0; i <= answer - 5; i++) {
                         currentPW = currentPW + chars[Math.floor((Math.random() * Math.floor(chars.length -1)))];
-                    }
+                    };
+
+                    var rando = Math.floor((Math.random() * answer) + 1);
+
+                    console.log(currentPW);
+                    currentPW += nums[rando];
+                    console.log(currentPW);
+                    currentPW += caps[rando];
+                    console.log(currentPW);
+                    currentPW += lows[rando];
+                    console.log(currentPW);
+                    currentPW += syms[rando];
+                    console.log(currentPW);
+
                     document.getElementById("password").value = currentPW; //adds currentPW to password (display)
                 }
 
