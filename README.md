@@ -81,3 +81,4 @@ This project is licensed under the MIT License
 ## Acknowledgments
 ​
 * Hat tip and full curtsy to Alexis Bounds who assisted me greatly in containing text within the textarea.
+* Big thank you to Berkeley Extension instructor and TAs for all of their help, guidance and support.
