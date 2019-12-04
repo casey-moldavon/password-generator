@@ -42,33 +42,15 @@ After changing to the prompt option i then decided to add some more creative cha
 
 ![image 4](images/step-4-css.jpg)
 
-​
-### Prerequisites
-​
-What things you need to install the software and how to install them
-​
-```
-Give examples
-```
-​
-### Installing
-​
-A step by step series of examples that tell you how to get a development env running
-​
-Say what the step will be
-​
-```
-Give the example
-```
-​
-And repeat
-​
-```
-until finished
-```
-​
-End with an example of getting some data out of the system or using it for a little demo
-​
+I consulted a classmate on my issue with the text running off the text box after a password is generate with greater length and they instantly had a solution, changing the text box into a textArea. This immediately fixed the issue and also added a placeholder which i had previously neglected to include. It's hard to remember everything, even when you psudo code the poop out of your project before starting. I appologize for my poty language. won't happen again.
+
+![image 5](images/step-5-html.jpg)
+
+See! all better =)
+
+Next i began working on the Copy to Clipboard function along with the previous passwords generator that i want to display at the bottom of the screen or possibly make into a link leading to an outside source. My thinking was that it would simply be an empty array that stores each generated password.
+
+
 ​
 ## Built With
 ​
@@ -78,18 +60,17 @@ End with an example of getting some data out of the system or using it for a lit
 ​
 ## Deployed Link
 ​
-* [See Live Site](#)
+* [See Live Site](https://casey-moldavon.github.io/password-generator/)
 ​
 ​
 ## Authors
 ​
-* **YOUR NAME** 
+* **Casey M.** 
 ​
-- [Link to Portfolio Site](#)
-- [Link to Github](https://github.com/)
-- [Link to LinkedIn](https://www.linkedin.com/)
-​
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+- [Link to Password Generator Site](https://casey-moldavon.github.io/password-generator/)
+- [Link to Github](https://github.com/casey-moldavon/password-generator)
+- [Link to LinkedIn](https://www.linkedin.com/in/casey-moldavon-442a1761/)
+
 ​
 ## License
 ​
@@ -97,6 +78,4 @@ This project is licensed under the MIT License
 ​
 ## Acknowledgments
 ​
-* Hat tip to anyone whose code, libraries, packages, or UI was used  / inspired from
-* Inspiration
-* etc
+* Hat tip and full curtsy to Alexis Bounds who assisted me greatly in containing text within the textarea.

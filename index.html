@@ -48,22 +48,18 @@
                     <textarea
                         readonly
                         id="password"
-                        placeholder="Your Secure Password"></textarea>
+                        placeholder="Your Secure Password"
+                    ></textarea>
                 
                     <br>
                     <div class="container">
                         <div class="row">
                             <div class="mx-auto">
                                 <button onclick="question()" class="mr-5 btn-light btn-outline-primary btn-lg"><strong>Generate Password</strong></button>
-                                <button onclick="" class="ml-5 btn-light btn-outline-primary btn-lg"><strong>Copy to Clipboard</strong></button>
+                                <button onclick="clipBoard()" class="ml-5 btn-light btn-outline-primary btn-lg"><strong>Copy to Clipboard</strong></button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="previous_passwords">
-                    <b>Previously Generated Passwords</b>
-                    <br>
-                    <div id="last_passwords"></div>
                 </div>
             </div>
         </div>
@@ -112,7 +108,15 @@
                     alert('Safety Cat says: "Numbers only would be puuurrrfect"');
                     i = answer.length - 1;
                 }
+                
             }
+        }
+
+        function clipBoard(){
+            document.getElementById("password").select();
+            document.execCommand("copy");
+
+            alert('Safety Cat says: "Password has been saved to Clipboard!"');
         }
 
 
