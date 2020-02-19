@@ -1,3 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    /* background-image: url(images/cat-background-2.jpg); */
+    background-image: url(images/empty-background.jpeg);
+    background-color: #f2e8cd;
+    /* position: fixed; */
+}
+
+#safety-cat {
+    position: relative;
+    margin-left: 50px;
+    margin-right: -80%;
+    margin-bottom: -40px;
+
+    /* width: 20%; */
+    height: 400px;
+    width: 250px;
+}
+
+
 /* class */
 .content {
     padding: 20px;
@@ -5,15 +27,16 @@
     padding-right: 55px;
     margin: 10px;
     margin-top: 42px;
-    width: 100%;
+    /* margin-left: 0; */
+    margin-right: 0;
     background-color: #3b3829;
     text-align: center;
     border-radius: 10px;
 }
 /* id */
 #password {
-    padding-top: 50px;
-    padding-bottom: 10px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 10px; */
     margin: 10px;
     margin-bottom: 32px;
     width: 100%;
@@ -31,4 +54,11 @@
 .content {
     font-weight: bold;
     color: white;
+}
+
+#generate-btn {
+    margin: 5px;
+}
+#copy-btn {
+    margin: 5px;
 }
