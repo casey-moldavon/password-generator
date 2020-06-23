@@ -62,3 +62,51 @@ body {
 #copy-btn {
     margin: 5px;
 }
+/* #advanced-btn {
+    margin: 5px;
+} */
+
+
+/* added in post for button to turn on advanced password generator */
+
+  #advanced-btn .tooltiptext1 {
+    visibility: hidden;
+    background-color: white;
+    color: #007bff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+  }
+
+    #advanced-btn:hover {
+        color: white;
+    }
+
+    #advanced-btn:hover .tooltiptext1 {
+        visibility: visible;
+    }
+
+  #original-btn .tooltiptext2 {
+    visibility: hidden;
+    background-color: white;
+    color: #007bff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+  }
+
+    #original-btn:hover {
+        color: white;
+    }
+
+  #original-btn:hover .tooltiptext2 {
+    visibility: visible;
+  }
